@@ -199,7 +199,7 @@ export default function App() {
                         <Heart size={18} /> {favorites.includes(selected.id) ? "Favorited" : "Favorite"}
                       </button>
                       <button
-                        className="px-4 py-2 rounded-lg text-white"
+                        className="px-4 py-2 rounded-lg bg-amber-700 text-white"
                         onClick={() => alert('Order placed')}
                       >
                         Order
