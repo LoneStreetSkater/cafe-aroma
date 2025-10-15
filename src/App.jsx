@@ -9,7 +9,7 @@ const MENU = [
     name: "Latte",
     price: "3.20",
     desc: "Espresso topped with steamed milk.",
-    img: "./coffee.jpg",
+    img: "/public/coffee.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const MENU = [
     name: "Cappuccino",
     price: "3.50",
     desc: "Equal parts espresso, steamed milk, and foam.",
-    img: "./coffee.jpg",
+    img: "/public/coffee.jpg",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const MENU = [
     name: "Espresso",
     price: "2",
     desc: "A classic.",
-    img: "./coffee.jpg",
+    img: "/public/coffee.jpg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const MENU = [
     name: "Almond Croissant",
     price: "2.80",
     desc: "Buttery croissant filled with almond paste.",
-    img: "./crossaint.jpg",
+    img: "/public/coffee.jpg",
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ const MENU = [
     name: "Red Velvet",
     price: "2.20",
     desc: "Light cocoa infused sponge cake, layered with frosting.",
-    img: "./crossaint.jpg",
+    img: "/public/coffee.jpg",
   },
   {
     id: 6,
@@ -49,7 +49,7 @@ const MENU = [
     name: "Mojito",
     price: "3.10",
     desc: "Refreshing concoction of zesty lime, cool mint, and a splash of soda.",
-    img: "./drink.jpg",
+    img: "/public/coffee.jpg",
   },
   {
     id: 7,
@@ -57,7 +57,7 @@ const MENU = [
     name: "Orange Juice",
     price: "2.90",
     desc: "Freshly squeezed orange juice. Can't go wrong with it!",
-    img: "./drink.jpg",
+    img: "/public/coffee.jpg",
   },
 ];
 
@@ -199,7 +199,7 @@ export default function App() {
                         <Heart size={18} /> {favorites.includes(selected.id) ? "Favorited" : "Favorite"}
                       </button>
                       <button
-                        className="px-4 py-2 rounded-lg bg-amber-700 text-white"
+                        className="px-4 py-2 rounded-lg bg-black text-white"
                         onClick={() => alert('Order placed')}
                       >
                         Order
@@ -210,7 +210,7 @@ export default function App() {
                   <div className="mt-6 text-right">
                     <button
                       onClick={() => setSelected(null)}
-                      className="px-5 text-sm text-white"
+                      className="px-5 text-sm bg-r text-white"
                     >
                       Close
                     </button>
